@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,6 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/filledrot"
+        android:contentDescription="@string/logo"
         android:layout_below="@id/uda"
         android:scaleType="fitXY"/>
 
@@ -27,12 +27,12 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@id/uda"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:gravity="center"
         android:text="@string/ud"
         android:textAlignment="center"
-        android:textColor="#00ACC1"
-        android:textSize="20sp"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/text_size"
         android:layout_margin="5sp"/>
 
     <ImageView
@@ -40,18 +40,19 @@
         android:layout_height="40dp"
         android:layout_below="@id/uda"
         android:layout_margin="7dp"
-        android:src="@drawable/light_bulb" />
+        android:src="@drawable/light_bulb"
+        android:contentDescription="@string/icons"/>
 
     <TextView
         android:id="@+id/t2"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@id/t1"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:gravity="center"
         android:text="@string/num"
-        android:textColor="#00ACC1"
-        android:textSize="20sp"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/text_size"
         android:layout_margin="5sp"/>
 
     <ImageView
@@ -60,7 +61,7 @@
         android:layout_margin="7dp"
         android:src="@drawable/smartphone"
         android:layout_below="@id/t1"
-        />
+        android:contentDescription="@string/icons"/>
 
     <TextView
         android:id="@+id/t3"
@@ -68,11 +69,11 @@
         android:layout_height="45dp"
         android:layout_below="@id/t2"
         android:layout_margin="5sp"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:gravity="center"
         android:text="@string/site"
-        android:textColor="#00ACC1"
-        android:textSize="20sp"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/text_size"
         />
 
     <ImageView
@@ -81,6 +82,7 @@
         android:layout_margin="10dp"
         android:src="@drawable/domain"
         android:layout_below="@id/t2"
+        android:contentDescription="@string/icons"
         />
 
     <TextView
@@ -90,15 +92,14 @@
         android:layout_below="@id/t3"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-
         android:layout_marginBottom="5sp"
         android:layout_marginRight="5sp"
         android:layout_marginTop="5sp"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:gravity="center"
         android:text="@string/address"
-        android:textColor="#00ACC1"
-        android:textSize="18sp" />
+        android:textColor="@color/cyan"
+        android:textSize="18sp" android:layout_marginEnd="5sp"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -107,8 +108,9 @@
         android:layout_marginLeft="5sp"
         android:layout_marginTop="5sp"
         android:layout_below="@id/t3"
-        android:background="#FFFFFF"
-        />
+        android:background="@color/white"
+        android:contentDescription="@string/icons"
+        android:layout_toStartOf="@id/t4" android:layout_marginStart="5sp"/>
 
     <ImageView
         android:layout_width="35dp"
@@ -116,8 +118,8 @@
         android:layout_margin="10dp"
         android:src="@drawable/map"
         android:layout_below="@id/t3"
-        android:background="#FFFFFF"
-
+        android:background="@color/white"
+        android:contentDescription="@string/icons"
         />
 
 
